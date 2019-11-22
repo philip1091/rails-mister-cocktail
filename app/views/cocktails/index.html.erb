@@ -1,0 +1,72 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <p class="text-danger brand">
+  <i class="fa fa-cocktail text-danger"></i>
+  Shake</p>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item button">
+        <span>
+          <%= link_to "add a cocktail", new_cocktail_path %>
+
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="banner">
+</div>
+
+
+
+<div class="container">
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+        <p>
+        <%= link_to cocktail.name, cocktail_path(cocktail) %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="footer">
+    <div class="footer-links ">
+
+      <a href="#"><i class="fab fa-instagram text-danger"></i></a>
+      <a href="#"><i class="fab fa-facebook text-danger"></i></a>
+      <a href="#"><i class="fab fa-twitter text-danger"></i></a>
+    </div>
+
+    <div class="footer-copyright">
+      <p class="text-danger brand1">
+        <i class="fa fa-cocktail text-danger"></i>
+        Shake your cocktail library
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
